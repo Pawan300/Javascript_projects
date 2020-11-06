@@ -1,0 +1,43 @@
+<html>
+<title>Tip Calculator</title>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tip.css') }}">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Tip Calculator</h1>
+
+        <div id="calculator">
+
+            <form>
+                <h2>Bill amount :</h2>
+                <p>
+                    Rs.<input id="amount" type="text" placeholder="Bill Amount">
+                </p>
+                <h2>Service : </h2>
+                <select id="serviceQual">
+                    <option disabled selected value="0">-- Choose an Option --</option>
+                    <option value="0.3">30&#37; &#45; Outstanding</option>
+                    <option value="0.2">20&#37; &#45; Good</option>
+                    <option value="0.15">15&#37; &#45; It was OK</option>
+                    <option value="0.1">10&#37; &#45; Bad</option>
+                    <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
+                <h2>How many people sharing the bill?</h2>
+                <input id="person" type="text" placeholder="Person">
+            </form>
+
+            <button type="button" id="calculate">Calculate</button>
+        </div>
+        
+        <div id="totalTip">
+            Rs. <span id="tip">0.00</span>
+            <small id="each">each</small> 
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='tip.js') }}"></script>
+    </div>
+</body>
+</html>
