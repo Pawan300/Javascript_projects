@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Stopwatch</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Stopwatch.css') }}"">
+    </head>
+    <body>
+        <script src="{{ url_for('static', filename='Stopwatch.js') }}"></script>
+        <div class="stopwatch">
+            <h2></h2>
+            <h2>Vanilla JavaScript Stopwatch</h2>
+            <p><span id="minutes">00</span><b>:</b><span id="seconds">00</span></p>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>  
+    </body>
+</html>
+   
