@@ -9,7 +9,7 @@ body{
     margin: 20px auto;
 }
 #Calculator{
-    width: 350px;
+    width: 380px;
     height: 540px;
     background-color: #eaeaea;
     margin: 20px auto;
@@ -41,7 +41,10 @@ body{
 .operator, .number, .empty, .scientific_calci{
 	width: 50px;
 	height: 50px;
-	margin: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 30px;
 	float: left;
 	border-radius: 50%;
 	border-width: 0;
@@ -60,27 +63,18 @@ body{
 .operator:focus, .number:focus, .empty:focus, .scientific_calci.focus{
 	outline: 0;
 }
-button:nth-child(4){
-	font-size: 20px;
-	background-color: #20b2aa;
+.operator, .scientific_calci{
+	color: #fff;
+	background-color: #63a4f8;
 }
-button:nth-child(8){
+
+button:nth-child(1){
 	font-size: 20px;
-	background-color: #ffa500;
+	color: black;
+	background-color: #eaeaea;
 }
-button:nth-child(12){
+button:nth-child(2){
 	font-size: 20px;
-	background-color: #f08080;
-}
-button:nth-child(16){
-	font-size: 20px;
-	background-color: #7d93e0;
-}
-button:nth-child(19){
-	font-size: 20px;
-	background-color: #f03e11;
-}
-button:nth-child(20){
-	font-size: 20px;
-	background-color: #9477af;
+	color: black;
+	background-color: #eaeaea;
 }
