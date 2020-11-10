@@ -1,4 +1,4 @@
-## This is the demo of an Javascript created Stopwatch.
+## This is the demo of a Javascript created Stopwatch.
 
 It has three options:
 * Start
