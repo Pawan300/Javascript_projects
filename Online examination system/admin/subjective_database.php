@@ -4,11 +4,6 @@ session_start();
 $db = mysqli_connect('localhost','root','','exams');
 
 $question = mysqli_real_escape_string($db ,$_POST['question']);
-$option1 = mysqli_real_escape_string($db ,$_POST['option1']);
-$option2 = mysqli_real_escape_string($db ,$_POST['option2']);
-$option3 = mysqli_real_escape_string($db ,$_POST['option3']);
-$option4 = mysqli_real_escape_string($db ,$_POST['option4']);
-$correct_answer = mysqli_real_escape_string($db ,$_POST['correct_answer']);
 $score = mysqli_real_escape_string($db ,$_POST['score']);
 $question_type = mysqli_real_escape_string($db ,$_POST['question_type']);
 $time = mysqli_real_escape_string($db ,$_POST['time']);
@@ -45,13 +40,13 @@ if (is_numeric($score)){
             $result1 = mysqli_fetch_array($query ,MYSQLI_BOTH);
             $total_score = $result1['score'];
         }
-        if ((int)($total_score+$score) >  $max_score){
+        if ((int)($total_score+$score) > $max_score){
             echo "Maximum score reached";
         }
         else{
 
-        $sql = "INSERT INTO question_library (Exam_id, Question, Option1, Option2, Option3, Option4, Correct_answer, Score, Question_type)
-                VALUES ('$exam_id','$question', '$option1', '$option2', '$option3', '$option4','$correct_answer', '$score','$question_type')";
+        $sql = "INSERT INTO question_library (Exam_id, Score, Question, Question_type)
+                VALUES ('$exam_id','$score' ,'$question', '$question_type')";
         $result = mysqli_query($db, $sql);
         if (!$result){
             die("Adding record is failing.");

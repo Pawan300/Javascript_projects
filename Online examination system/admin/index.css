@@ -1,0 +1,67 @@
+#exams_container{
+    width : 1200px;
+    height : 300px; 
+   margin-left: 200px;
+   margin-top: 100px;
+}
+/* #exams_record{
+	display: block;
+}
+#exams_record1, #exams_record2{
+    display :none;
+} */
+#exams_record, #exams_record1, #exams_record2{
+    width :1000px;
+    height : 85%; 
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid black;
+    min-width: 400px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+}
+#exams_record, #exams_record1, #exams_record2, td, th{
+
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: pointer;
+}
+
+td{
+	font-size: 18px;
+}
+
+th{
+	background-color: blue;
+	color: white;
+}
+
+tr:nth-child(odd){
+	background-color: lightblue;
+}
+
+tr:nth-child(odd):hover{
+	background-color: dodgerblue;
+	color: white;
+	transform: scale(1.2);
+	transition: transform 300ms ease-in;
+}
+
+tr:nth-child(even){
+
+	background-color: #ededed;
+}
+
+tr:nth-child(even):hover{
+
+	background-color: lightgray;
+	transform: scale(1.2);
+	transition: transform 300ms ease-in;
+
+}
+
+#Preview{
+    background-color: blue;
+    color: blanchedalmond;
+}

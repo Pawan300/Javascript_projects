@@ -1,0 +1,31 @@
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 120%;
+    background: #ffffff;
+}
+
+.header{
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    background: #5f9ea0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    padding: 20px;
+}
+#question_container{
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
