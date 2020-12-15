@@ -1,0 +1,85 @@
+.header{
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 440px;
+    color: white;
+    background: #5f9ea0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    padding: 20px;
+}
+#question_container{
+    width: 30%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 440px;
+    border: 1px solid black;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+#mcq, #subjective{
+    background: #5f9ea0;
+    color: white;
+    padding:15px;
+    border-radius:5px;
+}
+#mcq{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 490px;
+    margin-right: 10px;
+}
+#subjective{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+#mcq:hover, #subjective:hover{
+    background: #0a494b;
+    color: white; 
+}
+#question_container #add_question_button{
+    background: #5f9ea0;
+    color: white;
+    margin:0px 0px 0px 150px;
+    padding:15px;
+    border-radius:5px;
+}
+#question_container #add_question_button:hover{
+    background: #0a494b;
+    color: white;
+}
+#question_container textarea{
+    width:400px;
+    height: 100px;
+}
+#question_container input:nth-child(3n){    /* text box */
+    width: 200px;
+    height:40px;
+    margin: 10px 10px 10px 10px;
+}
+#question_container input:nth-child(2){    /*  radio button */
+    width: 20px;
+    height:15px;
+    margin: 10px 10px 50px 10px;
+}
+#question_container input:nth-child(5){    /*  radio button */
+    width: 20px;
+    height:15px;
+    margin: 10px 10px 50px 10px;
+}
+#question_container input:nth-child(8){    /*  radio button */
+    width: 20px;
+    height:15px;
+    margin: 10px 10px 50px 10px;
+}
+#question_container input:nth-child(11){    /*  radio button */
+    width: 20px;
+    height:15px;
+    margin: 10px 10px 50px 10px;
+}
